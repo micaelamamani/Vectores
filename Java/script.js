@@ -25,3 +25,9 @@ function nuevaPersona(){
  document.getElementById('IDAltura').Value = "";
 };
 
+ document.getElementById('btnMostrarTodo').addEventListener('click', ()=>{
+    personas.forEach( per=>{
+        console.log(`nombre: ${per.nombre},
+        edad: ${per.edad}, altura: ${per.altura}`);
+    });
+ });
